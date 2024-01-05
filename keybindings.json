@@ -1,0 +1,29 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "keys": "j",
+        "commad": "vscode-neovim.compositeEscap1",
+        "when": "neovim.mode == insert && editorTextFocus",
+        "args": "j"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "cursorRight",
+        "when": "neovim.mode == insert && editorTextFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "cursorLeft",
+        "when": "neovim.mode == insert && editorTextFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "cursorDown",
+        "when": "neovim.mode == insert && editorTextFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "cursorUp",
+        "when": "neovim.mode == insert && editorTextFocus"
+    }
+]

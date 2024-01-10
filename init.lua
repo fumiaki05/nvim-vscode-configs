@@ -15,6 +15,10 @@ vim.opt.rtp:prepend(lazypath)
 -- Option Configuration
 local set = vim.opt
 
+-- Shared Configuration
+
+set.clipboard = "unnamedplus"
+
 if not vim.g.vscode then
   set.swapfile = false
   set.syntax = "on"
@@ -33,7 +37,6 @@ if not vim.g.vscode then
   --
   set.hls = true
   set.smartcase = true
-  set.clipboard = "unnamedplus"
   set.showmatch = true
   set.laststatus = 2
   set.autoindent = true

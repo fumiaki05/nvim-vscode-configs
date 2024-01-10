@@ -17,6 +17,8 @@ local set = vim.opt
 
 -- Shared Configuration
 
+set.hls = true
+set.smartcase = true
 set.clipboard = "unnamedplus"
 
 if not vim.g.vscode then
@@ -35,8 +37,6 @@ if not vim.g.vscode then
   set.tabstop = 2
   set.expandtab = true
   --
-  set.hls = true
-  set.smartcase = true
   set.showmatch = true
   set.laststatus = 2
   set.autoindent = true

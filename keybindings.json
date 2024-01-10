@@ -25,5 +25,10 @@
         "key": "ctrl+k",
         "command": "cursorUp",
         "when": "neovim.mode == insert && editorTextFocus"
-    }
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-vscode-neovim.ctrl-b",
+        "when": "editorTextFocus && neovim.ctrlKeysNormal.b && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
+    }    
 ]

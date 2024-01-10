@@ -1,7 +1,7 @@
 // Place your key bindings in this file to override the defaults
 [
     {
-        "keys": "j",
+        "key": "j",
         "command": "vscode-neovim.compositeEscape1",
         "when": "neovim.mode == insert && editorTextFocus",
         "args": "j"

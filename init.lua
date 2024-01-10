@@ -55,7 +55,7 @@ if vim.g.vscode then
   --vim.keymap.set("n", "L", "<Cmd>call VSCodeNotify('workbench.action.nextEditor')<CR>")
 else
   vim.keymap.set('i', 'jj', "<Esc>", { silent = true, noremap = true})
-  vim.keymap.set('i', 'っj', "<Esc>", { silent = true, noremap = true})
+  vim.keymap.set('i', 'ｊｊ', "<Esc>", { silent = true, noremap = true})
   vim.keymap.set('i', '<C-j>', "<Down>", {noremap = true})
   vim.keymap.set('i', '<C-k>', "<Up>", {noremap = true})
   vim.keymap.set('i', '<C-h>', "<Left>", {noremap = true})

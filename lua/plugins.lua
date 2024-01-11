@@ -28,7 +28,7 @@ else
       dependencies = {'nvim-tree/nvim-web-devicons'},
       --options = {theme = 'horizon'},
       config = function()
-        require('lualine').setup()
+        require('lualine-conf')
       end
     }
   }

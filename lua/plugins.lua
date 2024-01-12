@@ -1,5 +1,4 @@
 -- Automatically install Lazy
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -13,6 +12,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Plugins
 if vim.g.vscode then
   plugins= {
     {"kylechui/nvim-surround", config = function() require("nvim-surround").setup() end},
@@ -30,8 +30,18 @@ else
       config = function()
         require('lualine-conf')
       end
-    }
+    },
+    {'nvim-tree/nvim-tree.lua', dependencies = {'nvim-tree/nvim-web-devicons'}},
+    {'akinsho/bufferline.nvim', dependencies = 'nvim-tree/nvim-web-devicons'},
   }
+
 end
 
-require("lazy").setup(plugins, opts)
+require('lazy').setup(plugins, opts)
+
+if vim.g.vscode then 
+  --Nothing to do
+else
+  require('nvim_tree')
+  require('bufferline').setup()
+end

@@ -11,12 +11,12 @@ set.ignorecase = true
 set.smartcase = true
 set.clipboard = "unnamedplus"
 set.whichwrap = "b,s,h,l,<,>,[,],~"
+set.encoding = "utf-8"
+set.fileencodings = "utf-8"
 
 if not vim.g.vscode then
   set.swapfile = false
   set.syntax = "on"
-  set.encoding = "utf-8"
-  set.fileencodings = "utf-8"
   set.updatetime = 300
   set.title = true
   -- UI

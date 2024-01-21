@@ -28,7 +28,7 @@ else
   vim.keymap.set('', '<S-h>', '0', {noremap = true})
   vim.keymap.set('', '<S-l>', '$', {noremap = true})
   vim.keymap.set('n', '<leader>s', ':w<CR>', {noremap = true})
-  --vim.keymap.set("n", "<leader>o", function() require("telescope.builtin").find_files { hidden = true } end)
+  vim.keymap.set("n", "<leader>o", function() require("telescope.builtin").find_files { hidden = true } end)
   --vim.keymap.set("n", "<leader>d", "<Cmd>bd<CR>")
   vim.keymap.set("n", "H", "<Cmd>bp<CR>")
   vim.keymap.set("n", "L", "<Cmd>bn<CR>")

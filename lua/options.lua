@@ -1,6 +1,6 @@
 -- Option Configuration
 if vim.fn.has('mac') then
-  vim.cmd('language en_US')
+  --vim.cmd('language en_US')
 end
 
 local set = vim.opt

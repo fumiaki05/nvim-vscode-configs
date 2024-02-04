@@ -1,6 +1,6 @@
 -- Option Configuration
 if vim.fn.has('mac') == 1 then
---  vim.cmd('language en_US')
+  vim.cmd('language en_US')
 end
 
 local set = vim.opt
@@ -37,4 +37,5 @@ if not vim.g.vscode then
   set.listchars = { tab = ">-", trail = "-" }
   set.completeopt = "menuone"
   set.termguicolors = true
+  set.incsearch = true
 end

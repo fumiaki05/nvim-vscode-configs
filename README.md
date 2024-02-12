@@ -36,3 +36,9 @@ To get started with the project, follow these steps:
 
 3. Create an `.editorconfig` file in the root directory of your project and add the desired key bindings.
 
+## Plugins
+
+### Codeium
+
+To use Codeium suggestion, run `:Codeium Auth` and put your API Token.
+More info: https://github.com/Exafunction/codeium.vim

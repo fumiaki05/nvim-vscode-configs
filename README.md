@@ -42,3 +42,5 @@ To get started with the project, follow these steps:
 
 To use Codeium suggestion, run `:Codeium Auth` and put your API Token.
 More info: https://github.com/Exafunction/codeium.vim
+
+By Default, Codeium was disabled, run `:CodeiumEnable` to enable it.

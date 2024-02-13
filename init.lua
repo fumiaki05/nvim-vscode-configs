@@ -11,5 +11,6 @@ else
     vim.cmd[[colorscheme tokyonight-night]]
   else
     vim.cmd[[colorscheme tokyonight-moon]]
+  end
 end
 

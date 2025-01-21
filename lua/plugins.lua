@@ -16,6 +16,13 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
   {'kylechui/nvim-surround', config = function() require('nvim-surround').setup() end},
+  {
+    'smoka7/hop.nvim',
+    version = '*',
+    opts = {
+      keys = 'etovxqpdygfblzhckisuran'
+    }
+  }
 }
 
 
@@ -43,7 +50,7 @@ else
     {
       'Exafunction/codeium.vim',
       event = 'BufEnter'
-    }
+    },
   })
 end
 

@@ -12,17 +12,20 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Plugins
+-- Common Plugins
+
+local plugins = {
+  {'kylechui/nvim-surround', config = function() require('nvim-surround').setup() end},
+}
+
+
 if vim.g.vscode then
-  plugins= {
-    {'kylechui/nvim-surround', config = function() require('nvim-surround').setup() end},
-    --{'vscode-neovim/vscode-multi-cursor', event = 'VeryLazy', opts = {}}
-  }
+  -- VSCode specific Plugins
 else
-  plugins = {
+  -- Neovim specific Plugins
+  vim.list_extend(plugins, {
     'nvim-tree/nvim-web-devicons',
     'folke/tokyonight.nvim',
-    {'kylechui/nvim-surround', config = function() require('nvim-surround').setup() end},
     {
       'nvim-lualine/lualine.nvim',
       dependencies = {'nvim-tree/nvim-web-devicons'},
@@ -41,13 +44,12 @@ else
       'Exafunction/codeium.vim',
       event = 'BufEnter'
     }
-  }
-
+  })
 end
 
 require('lazy').setup(plugins, opts)
 
-if vim.g.vscode then 
+if vim.g.vscode then
   --Nothing to do
 else
   require('nvim_tree')

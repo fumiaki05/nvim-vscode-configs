@@ -39,8 +39,13 @@ else
   -- nvim-tree
   vim.keymap.set('n', '<leader>b', '<Cmd>NvimTreeToggle<CR>')
 
-  -- hop.nvim
-  vim.keymap.set('n', '<leader>w', '<Cmd>HopChar1<CR>')
-  vim.keymap.set('n', '<leader>W', '<Cmd>HopWord<CR>')
 
 end
+
+-- common keymaps --
+
+-- plugins
+
+-- hop.nvim
+vim.keymap.set('n', '<leader>w', '<Cmd>HopChar1<CR>')
+vim.keymap.set('n', '<leader>W', '<Cmd>HopWord<CR>')
